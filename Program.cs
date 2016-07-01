@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ConsoleApplication
 {
@@ -6,7 +7,12 @@ namespace ConsoleApplication
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var list = new List<String>();
+            list.Add("hello");
+            list.Add("World");
+
+            Console.WriteLine("Hello World! length is {0}",
+                list.Count);
         }
     }
 }
